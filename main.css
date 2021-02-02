@@ -1,0 +1,91 @@
+body {
+    margin: 0
+}
+
+h2 {
+    color: white;
+    font-size: 35px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 440px 150px 1030px 200px 200px;
+}
+
+.menu {
+    background-color: cadetblue;
+    grid-area: 1/1/2/6;
+    overflow: hidden;
+}
+
+.gap1 {
+    background-color: fuchsia;
+    grid-area: 2/1/3/6
+}
+
+.gap2 {
+    background-color: forestgreen;
+    grid-area: 4/1/5/6;
+}
+
+.footer {
+    background-color: dodgerblue;
+    grid-area: 5/1/6/6;
+}
+
+.grid-container-menu {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 320px);
+    grid-gap: 25px 25px;
+    grid-area: 3/2/4/span 3;
+} 
+
+.m1, .m2,
+.m3, .m4,
+.m5, .m6 {
+    border-radius: 25px;
+    text-align: left;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+    
+}
+
+.textbox {
+    position: absolute;
+    padding: 30px;
+}
+
+.m1 {
+    grid-area: 1/1/2/3;
+}
+
+.m2 {
+    grid-area: 1/3/2/4;
+}
+
+.m3 {
+    grid-area: 2/1/3/2;
+}
+
+.m4 {
+    grid-area: 2/2/3/4
+}
+
+.m5 {
+    grid-area: 3/1/4/3
+}
+
+.m6 {
+    grid-area: 3/3/4/4
+}
