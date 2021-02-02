@@ -7,15 +7,14 @@ h2 {
     color: white;
     font-size: 35px;
     font-family: 'Bowlby One SC', cursive;
-    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
 }
 
 span {
-    position:absolute; 
-    width:100%;
-    height:100%;
-    top:0;
+    position: absolute; 
+    width: 100%;
+    height: 100%;
+    top: 0;
     left: 0;
     z-index: 1;
 }
@@ -59,13 +58,46 @@ span {
 .grid-container {
     display: grid;
     grid-template-columns: 1fr repeat(3, 300px) 1fr;
-    grid-template-rows: 440px 150px 1030px 200px 200px;
+    grid-template-rows: 1fr 150px 1030px 200px 200px;
+}
+
+.menu_pic {
+    grid-area: 1/1/2/6;
+    overflow: hidden;
+}
+
+.menu_picture {
+    width: 100%;
+    z-index: 0;
 }
 
 .menu {
-    background-color: cadetblue;
-    grid-area: 1/1/2/6;
-    overflow: hidden;
+    grid-area: 1/2/2/span 3;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    top: 20px;
+}
+
+.menu_options {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+    top: 20px;
+}
+
+.menu_options a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    margin: 20px;
+    transition: .5s ease;
+}
+
+.menu_options a:hover {
+    font-family: 'Bowlby One SC', cursive;
 }
 
 .gap1 {
