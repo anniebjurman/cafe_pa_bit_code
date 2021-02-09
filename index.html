@@ -8,81 +8,93 @@
     <meta charset="UTF-8">
     <meta name="author" content="Annie Bjurman">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A website for Café på bit" />
+    <meta name="description" content="A startpage for Café på bit" />
 </head>
     
 <body>
-    <div class="grid-container">
-        <div class="menu">
-            <img class="logo" src="pictures/logo_white1000.png">
-            <div class="menu_options">
-                <a class="link_fika" href="fika.html">Fika</a>
-                <a class="link_spel" href="spel.html">Spel</a>
-                <a class="link_nyheter" href="nyheter.html">Nyheter</a>
-                <div class="dropdown-content">
-                    <a href="#">Skellefteå</a><br>
-                    <a href="#">Piteå</a><br>
-                </div>
-                <a class="link_medlem" href="medlem.html">Medlem</a>
-                <a class="link_boka" href="boka.html">Boka</a>
-                <a class="link_kontakta_oss" href="kontakta_oss.html">Kontakta oss</a>
+    <div class="grid-startsida">
+    
+        <header>
+            <a href="index.html"> <!-- fixa -->
+                <img class="logo" src="pictures/logo_white1000.png">
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="link_fika" href="fika.html">Fika</a></li>
+                    <li><a id="link_spel" href="spel.html">Spel</a></li>
+                    <li><a id="link_nyheter" href="nyheter.html">Nyheter</a></li>
+                    <li><a id="link_medlem" href="medlem.html">Medlem</a></li>
+                    <li><a id="link_boka" href="boka.html">Boka</a></li>
+                    <li><a id="link_kontakta_oss" href="kontakta_oss.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="menu_pic">
+            <div id="text-header">
+                <h1>Stans största <br>vardagsrum!</h1>
             </div>
-        </div>
-        <div class="menu_pic">
-            <img class="menu_picture" src="pictures/startsida2.jpg">
-        </div>
-        <div class="gap1">
+            <img id="menu_picture" src="pictures/startsida3blur.jpg">
+        </section>
+        
+        <section id="gap1">
             <p>Café på bit är ett litet café som erbjuder hembakt fika 
                 och <br>roliga bräd- och arkadspel för alla åldrar. Välkommen in!</p>
-        </div>
+        </section>
         
-        <div class="grid-container-menu">
-            <div class="m1">
+        <section id="grid-container-menu">
+            <section id="m1">
                 <div class="textbox">
                     <h2>Vi finns i Skellefteå och i piteå.</h2>
                 </div>
-                <div class="overlay_m1">Läs mer --></div>
+                <div id="overlay_m1">Läs mer --></div>
                 <a href="kontakta_oss.html"><span></span></a>
-            </div>
+            </section>
 
-            <div class="m2">
+            <section id="m2">
                 <div class="textbox">
                     <h2>Bli medlem.</h2>
                 </div>
-                <div class="overlay_m2">Läs mer --></div>
+                <div id="overlay_m2">Läs mer --></div>
                 <a href="medlem.html"><span></span></a>
-            </div>
+            </section>
 
-            <div class="m3">
+            <section id="m3">
                 <div class="textbox">
                     <h2>Boka våran lokal.</h2>
                 </div>
-                <div class="overlay_m3">Läs mer --></div>
+                <div id="overlay_m3">Läs mer --></div>
                 <a href="boka.html"><span></span></a>
-            </div>  
-            <div class="m4">
+            </section>  
+            
+            <section id="m4">
                 <div class="textbox">
                     <h2>Vi har spel for alla åldrar.</h2>
                 </div>
-                <div class="overlay_m4">Läs mer --></div>
+                <div id="overlay_m4">Läs mer --></div>
                 <a href="spel.html"><span></span></a>
-            </div>
-            <div class="m5">
+            </section>
+            
+            <section id="m5">
                 <div class="textbox">
                     <h2>Vi bakar vårat eget fika.</h2>
                 </div>
-                <div class="overlay_m5">Läs mer --></div>
+                <div id="overlay_m5">Läs mer --></div>
                 <a href="fika.html"><span></span></a>
-            </div>
-            <div class="m6">
+            </section>
+            
+            <section id="m6">
                 <div class="textbox">
                     <h2>Nyheter.</h2>
                 </div>
-                <div class="overlay_m6">Läs mer --></div>
+                <div id="overlay_m6">Läs mer --></div>
                 <a href="nyheter.html"><span></span></a>
-            </div>
-        </div>
-        <div class="footer"></div>
+            </section>
+            
+        </section>
+        <section id="footer">
+            
+        </section>
     </div>
 </body>
 </html>
