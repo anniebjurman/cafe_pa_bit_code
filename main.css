@@ -10,13 +10,25 @@ h1 {
     letter-spacing: 2px;
     text-shadow: 5px 5px 5px black;
     line-height: 90%;
-    transition: .5s ease;
 }
 
 h2 {
     font-size: 35px;
     font-family: 'Bowlby One SC', cursive;
     letter-spacing: 2px;
+    margin: 0;
+}
+
+h3 {
+    color: black;
+    font-size: 25px;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    margin-bottom: 5px;
+    font-size: 15px;
 }
 
 p {
@@ -24,7 +36,7 @@ p {
     color: black;
 }
 
-.grid-startsida {
+.grid-container {
     display: grid;
     grid-template-columns: 1fr repeat(3, 350px) 1fr;
     grid-template-rows: 600px 150px 1030px 300px;
@@ -34,6 +46,12 @@ p {
 
 header {
     grid-area: 1/2/2/span 3;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    top: 20px;
 }
 
 #menu_pic {
@@ -76,37 +94,40 @@ nav a {
     transition: .2s ease;
 }
 
-.logo {
-    position: absolute;
-    width: 200px;
-    top: 20px;
-}
-
 nav a:hover {
     background-color: rgba(255, 255, 255, 0.34);
 }
 
-@media (max-width: 890px) {
-    body {
-        background: blue;
-    }
-    
+@media only screen and (max-width: 890px) {    
     h1 {
         font-size: 65px;
         transition: .5s ease;
     }
+    
+    li {
+        display: block;
+        margin-bottom: 20px;
+        transition: .5s ease;
+    }
+    
+    #text-header {
+        margin-top: 100px;
+        margin-left: 20px;
+        width: auto;
+        justify-content: flex-start;
+        transition: .5s ease;
+    }
 }
 
-@media (max-width: 1100px) {
-    
-    .grid-startsida {
+@media only screen and (max-width: 1100px) {
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr repeat(3, 32.2%) 1fr;
         grid-template-rows: 600px 150px 1030px 300px;
     }
 }
 
-@media (max-width: 360px) {
+@media only screen and (max-width: 360px) {
     body {
         background: red;
     }
@@ -119,7 +140,7 @@ nav a:hover {
     display: flex;
     justify-content: center;
     text-align: center;
-    
+    padding-top: 20px;
 }
 
 /* ---GRID-MENU--- */
@@ -229,17 +250,7 @@ span {
     background-color: #5F0100;
 }
 
-/* ---NYHETER-SKELLEFTEA/PITA--- */
-
-.grid-nyheter {
-    display: grid;
-    grid-template-columns: 1fr repeat(2, 450px) 1fr;
-    grid-template-rows: 600px 900px 300px;
-}
-
-#header-nyheter {
-    grid-area: 1/2/2/4;
-}
+/* ---NYHETER-SKELLEFTEA/PITEA--- */
 
 #skelleftea, #pitea {
     text-align: center;
@@ -247,16 +258,53 @@ span {
     border: 1px solid black;
     border-radius: 25px;
     margin-top: 20px;
+    width: 100%;
+    height: 850px;
+    padding: 30px;
+    padding-top: 10px;
+    overflow: hidden;
+    position: relative;
 }
 
 #skelleftea {
-    grid-area: 2/2/3/3;
     margin-right: 10px;
 }
 
 #pitea {
-    grid-area: 2/3/3/4;
     margin-left: 10px;
+}
+
+#content-nyheter {
+    grid-area: 3/2/4/5;
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-item {
+    text-align: left;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding-top: 120px;
+    padding-bottom: 20px;
+    background-image: linear-gradient(to bottom, transparent, white);
+}
+
+.read-more a {
+    color: white;
+    text-decoration: none;
+    background-color: #EB0805;
+    border-radius: 15px;
+    padding: 5px 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
 }
 
 /* ---FOOTER--- */
