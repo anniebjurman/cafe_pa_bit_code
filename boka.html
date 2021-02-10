@@ -12,6 +12,86 @@
 </head>
     
 <body>
+    <div class="grid-container">
+    
+        <header>
+            <a href="index.html">
+                <img class="logo" src="pictures/logo_white1000.png">
+            </a>
+            <nav>
+                <ul>
+                    <li><a id="link_fika" href="fika.html">Fika</a></li>
+                    <li><a id="link_spel" href="spel.html">Spel</a></li>
+                    <li><a id="link_nyheter" href="nyheter.html">Nyheter</a></li>
+                    <li><a id="link_medlem" href="medlem.html">Medlem</a></li>
+                    <li><a id="link_boka" href="boka.html">Boka</a></li>
+                    <li><a id="link_kontakta_oss" href="kontakta_oss.html">Kontakta oss</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section id="menu_pic">
+            <div id="text-header">
+                <h1>Boka</h1>
+            </div>
+            <img id="menu_picture" src="pictures/boka.jpg">
+        </section>
+        
+        <section id="gap1">
+            <p>Är ni ett stort sällskap som är ni sugna på lite spel? <br>Boka då hela våran lokal!</p>
+        </section>
+        
+        <form>
+            <section id="content-form">
+                
+                <section id="info-time">
+                    <div class="separator">Datum & tid</div>
+                    
+                    <label for="date">Datum</label>
+                    <input type="date" id="date" name="date">
+                    
+                    <label for="time-start">Starttid</label>
+                    <input type="time" name="time-start">
+                    
+                    <label for="time-end">Sluttid</label>
+                    <input type="time" name="time-end">
+                </section>
+                
+                <section id="info-person">
+                    <div class="separator">Dina uppgifter</div>
+
+                    <input type="text" placeholder="Personnummer" id="security-number" required>
+
+                    <input type="text" placeholder="Förnamn" id="first-name" required>
+
+                    <input type="text" placeholder="Efternamn" id="surname" required>
+                    
+                    <input type="text" placeholder="Adress" id="adress" required>
+                    
+                    <input type="text" placeholder="Postnummer" id="post-number" required>
+                    
+                </section>
+                
+                <section id="info-summary">
+                    <div class="separator">Sammanställning</div>
+                    <div id="summary">. . .</div>
+                </section>
+                
+                <section id="info-payment">
+                    <div class="separator">Betalning</div>
+                    <button>Klarna</button>
+                    <button>PayPal</button>
+                    <div id="summary">. . .</div>
+                    
+                    <input type="submit" value="Boka" id="submit-button">
+                </section>
+                
+            </section>
+        
+        </form>
+        
+        <section id="footer"></section>
+    </div>
 </body>
     
 <footer>
