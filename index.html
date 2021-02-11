@@ -28,6 +28,21 @@
                     <li><a id="link_kontakta_oss" href="kontakta_oss.html">Kontakta oss</a></li>
                 </ul>
             </nav>
+
+            <span id="menu-button" onclick="openNav()">&#9776;</span>
+            
+            <div id="mobile-nav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content">
+                <a href="#">Fika</a>
+                <a href="#">Spel</a>
+                <a href="#">Nyheter</a>
+                <a href="#">Medlem</a>
+                <a href="#">Boka</a>
+                <a href="#">Kontakta oss</a>
+              </div>
+            </div>
+            
         </header>
         
         <section id="menu_pic">
@@ -136,5 +151,14 @@
         
         <div id="after-footer"></div>
     </div>
+    <script>
+        function openNav() {
+          document.getElementById("mobile-nav").style.width = "100%";
+        }
+
+        function closeNav() {
+          document.getElementById("mobile-nav").style.width = "0%";
+        }
+    </script>
 </body>
 </html>
