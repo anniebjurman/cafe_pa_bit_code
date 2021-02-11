@@ -34,7 +34,7 @@
             <div id="text-header">
                 <h1>Boka</h1>
             </div>
-            <img id="menu_picture" src="pictures/boka.jpg">
+            <img id="menu_picture" src="pictures/startsida3blur.jpg">
         </section>
         
         <section id="gap1">
@@ -46,30 +46,54 @@
                 
                 <section id="info-time">
                     <div class="separator">Datum & tid</div>
-                    
-                    <label for="date">Datum</label>
-                    <input type="date" id="date" name="date">
-                    
-                    <label for="time-start">Starttid</label>
-                    <input type="time" name="time-start">
-                    
-                    <label for="time-end">Sluttid</label>
-                    <input type="time" name="time-end">
+                    <table class="booking">
+                        <tr>
+                            <td>
+                                <label for="date">Datum:</label><br>
+                                <input type="date" id="date" name="date">
+                            </td>
+                            <td>
+                                <label for="time-start">Starttid:</label><br>
+                                <input type="time" name="time-start">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <label for="time-end">Sluttid:</label><br>
+                                <input type="time" name="time-end">
+                            </td>
+                        </tr>
+                    </table>
                 </section>
                 
                 <section id="info-person">
                     <div class="separator">Dina uppgifter</div>
-
-                    <input type="text" placeholder="Personnummer" id="security-number" required>
-
-                    <input type="text" placeholder="Förnamn" id="first-name" required>
-
-                    <input type="text" placeholder="Efternamn" id="surname" required>
+                    <table class="booking">
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Personnummer" id="security-number" required>
+                            </td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Förnamn" id="first-name" required>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Efternamn" id="surname" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" placeholder="Adress" id="adress" required>
+                            </td>
+                            <td>
+                                <input type="text" placeholder="Postnummer" id="post-number" required>
+                            </td>
+                        </tr>
                     
-                    <input type="text" placeholder="Adress" id="adress" required>
-                    
-                    <input type="text" placeholder="Postnummer" id="post-number" required>
-                    
+                    </table>
                 </section>
                 
                 <section id="info-summary">
@@ -79,8 +103,13 @@
                 
                 <section id="info-payment">
                     <div class="separator">Betalning</div>
-                    <button>Klarna</button>
-                    <button>PayPal</button>
+                    
+                    <label for="klarna">Klarna</label>
+                    <input type="radio" id="klarna" name="payment" value="Klarna">
+                    
+                    <label for="paypal">PayPal</label>
+                    <input type="radio" id="paypal" name="payment" value="PayPal">
+                    
                     <div id="summary">. . .</div>
                     
                     <input type="submit" value="Boka" id="submit-button">
@@ -90,7 +119,49 @@
         
         </form>
         
-        <section id="footer"></section>
+        <div id="before-footer"></div>
+        
+        <section id="footer">
+            <div id="container-footer">
+                
+                <section id="footer-menu">
+                    <table>
+                        <tr>
+                            <th><a href="fika.html">Fika</a></th>
+                            <th><a href="spel.html">Spel</a></th>
+                            <th><a href="nyheter.html">Nyheter</a></th>
+                        </tr>
+                        <tr>
+                            <th><a href="medlem.html">Medlem</a></th>
+                            <th><a href="boka.html">Boka</a></th>
+                            <th><a href="kontakta_oss.html">Kontakta oss</a></th>
+                        </tr>
+                    </table>
+                </section>
+                
+                <div id="vertical-line"></div>
+                
+                <section id="footer-contact">
+                    <p>Piteå<br>Aronsgatan 7b <br>941 32 Piteå <br><br>Öppettider: <br>Alla dagar 12 - 22</p>
+                    
+                    <p>Skellefteå<br>Nygatan 28 <br>931 32 Skellefteå<br><br> Öppettider: <br>Alla dagar 11 - 22</p>
+                </section>
+                
+                <section id="footer-media">
+                    <div class="separator">Café på bit på sociala medier</div>
+                    <div id="media">
+                        <a href="">
+                            <img class="media-img" src="pictures/instagram.png">
+                        </a>
+                        <a href="">
+                            <img class="media-img" src="pictures/facebook.png">
+                        </a>
+                    </div>
+                </section>
+            </div>
+        </section>
+        
+        <div id="after-footer"></div>
     </div>
 </body>
     
