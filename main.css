@@ -82,6 +82,11 @@ nav {
     position: relative;
     justify-content: flex-end;
     top: 20px;
+    height: 55px;
+}
+
+header a {
+    z-index: 1;
 }
 
 nav a {
@@ -450,7 +455,7 @@ form {
 
 input {
     height: 30px;
-    width: 70%;
+    width: 90%;
     padding-left: 20px;
     border: 1px solid black;
     border-radius: 15px;
@@ -512,6 +517,7 @@ input[type="time"], input[type="date"], input[type="submit"] {
 
 #info-payment {
     grid-area: 4/1/5/3;
+    text-align: center;
 }
 
 #submit-button {
@@ -567,6 +573,16 @@ input[type="submit"] {
     background: none;
     height: 300px;
     width: 600px;
+}
+
+/* ---MEDLEM--- */
+
+#medlem-video {
+    grid-area: 3/2/4/5;
+}
+
+#medlem-video video {
+    width: 100%;
 }
 
 /* ---FOOTER--- */
@@ -643,7 +659,15 @@ input[type="submit"] {
 @media only screen and (max-width: 1100px) {
     .grid-container {
         grid-template-columns: 1fr repeat(3, 32.2%) 1fr;
-        grid-template-rows: 450px 150px 1030px 300px;
+    }
+    
+    .mapouter iframe {
+        width: 65%;
+        transition: 0.5s ease;
+    }
+    
+    #pitea-text {
+        margin-right: 100px;
     }
 }
 
@@ -697,58 +721,6 @@ input[type="submit"] {
     
      nav {
         display: none;
-    }
-    
-    /* ---OVERLAY-MENU--- */
-    
-    .overlay {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      z-index: 1;
-      top: 0;
-      right: 0;
-      background-color: rgba(95, 1, 0, 0.91);
-      overflow-x: hidden;
-      transition: 0.5s;
-
-    }
-
-    .overlay-content {
-      position: relative;
-      top: 25%;
-      width: 100%;
-      text-align: center;
-      margin-top: 30px;
-    }
-
-    .overlay a {
-      padding: 8px;
-      text-decoration: none;
-      font-size: 30px;
-      color: #ffffff;
-      display: block;
-      transition: 0.3s;
-    }
-
-    .overlay .closebtn {
-      position: absolute;
-      top: 20px;
-      right: 45px;
-      font-size: 60px;
-    }
-    
-    #menu-button {
-        display: block;
-        position: absolute;
-        left: 50px;
-        top: 40px;
-        font-size: 50px;
-        width: 50px;
-        height: 60px;
-        text-align: center;
-        color: white;
-        cursor: pointer;
     }
     
     /* ---GRID-MENU--- */
@@ -872,9 +844,47 @@ input[type="submit"] {
         margin-top: 30px;
     }
     
+    /* ---KONTAKTA OSS--- */
+    
+    #contact-content {
+        grid-area: 3/1/4/2;
+        margin: 0px 10px;
+    }
+    
+    #contact-skelleftea, 
+    #contact-pitea {
+        flex-direction: column;
+        height: 600px;
+        width: 80%;
+    }
+    
+    iframe {
+        display: none;
+    }
+    
     /* ---BOKA--- */
     
     form {
+        grid-area: 3/1/4/3;
+        margin: 0px 10px;
+    }
+    
+    .booking td {
+        display: block;
+    }
+    
+    #content-form {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 250px) 230px 250px;
+    }
+    
+    input {
+        width: 96%;
+    }
+    
+    /* ---MEDLEM--- */
+    
+    #medlem-video {
         grid-area: 3/1/4/3;
         margin: 0px 10px;
     }

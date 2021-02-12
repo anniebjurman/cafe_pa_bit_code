@@ -34,7 +34,7 @@
             <div id="text-header">
                 <h1>Boka</h1>
             </div>
-            <img id="menu_picture" src="pictures/startsida3blur.jpg">
+            <img id="menu_picture" src="pictures/startsida3blur.jpg" alt="Table football game with two hands playing">
         </section>
         
         <section id="gap1">
@@ -50,18 +50,18 @@
                         <tr>
                             <td>
                                 <label for="date">Datum:</label><br>
-                                <input type="date" id="date" name="date">
+                                <input type="date" id="date" name="date" required>
                             </td>
                             <td>
                                 <label for="time-start">Starttid:</label><br>
-                                <input type="time" name="time-start">
+                                <input type="time" name="time-start" required>
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
                                 <label for="time-end">Sluttid:</label><br>
-                                <input type="time" name="time-end">
+                                <input type="time" name="time-end" required>
                             </td>
                         </tr>
                     </table>
@@ -104,11 +104,11 @@
                 <section id="info-payment">
                     <div class="separator">Betalning</div>
                     
-                    <label for="klarna">Klarna</label>
                     <input type="radio" id="klarna" name="payment" value="Klarna">
+                    <label for="klarna">Klarna</label>
                     
-                    <label for="paypal">PayPal</label>
                     <input type="radio" id="paypal" name="payment" value="PayPal">
+                    <label for="paypal">PayPal</label>
                     
                     <div id="summary">. . .</div>
                     
