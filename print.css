@@ -1,3 +1,154 @@
 body {
-    background: pink;
+    margin: 0;
+}
+
+h1 {
+    font-size: 60px;
+    color: white;
+    margin: 0;
+    font-family: sans-serif;
+    padding-top: 100px;
+    font-weight: 300;
+}
+
+#print-header {
+    padding-top: 30px;
+}
+
+h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 0px;
+    margin-top: 30px;
+}
+
+h3 {
+    margin: 0px;
+}
+
+p {
+    font-size: 17px;
+}
+
+.grid-container {
+    display: block;
+}
+
+#menu_pic {
+    background-color: #890200;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+#gap1 {
+    text-align: center;
+}
+
+#vl {
+    border-left: 3px solid white;
+    margin: 0px 20px;
+    margin-top: 40px;
+}
+
+#print-logo {
+    padding-top: 100px;
+    color: white;
+}
+
+/* ---AVLÄGSNA ELEMENT--- */
+
+header, footer, #container-footer, nav, form, iframe, img, video, a {
+  display: none;
+}
+
+/* ---FOOTER--- */
+
+table {
+  break-inside: avoid;
+}
+
+/* ---STARTSIDA--- */
+
+#m1, #m2, #m3, #m4, #m5, #m6 {
+    border: 1px solid black;
+    margin: 10px 1px;
+    padding: 0px 20px;
+    width: 250px;
+    margin: 20px;
+}
+
+#grid-container-menu {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+}
+
+#grid-container-menu h2 {
+    margin-bottom: 30px;
+}
+
+#overlay_m1, #overlay_m2,
+#overlay_m3, #overlay_m4,
+#overlay_m5, #overlay_m6 {
+    display: none;
+}
+
+/* ---KONTAKTA OSS--- */
+
+#contact-content {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+#contact-skelleftea {
+    margin-right: 70px;
+}
+
+#contact-pitea {
+    margin-left: 70px;
+}
+
+/* ---NYHETER--- */
+
+#content-nyheter {
+    display: flex;
+    margin: 0px 20px;
+}
+
+#skelleftea {
+    margin-right: 40px;
+}
+
+#pitea {
+    margin-left: 40px;
+}
+
+.news-item {
+    break-inside: avoid;
+}
+
+/* ---SPEL--- */
+
+#gap1-game, #content-game, #price {
+    margin: 0px 20px;
+}
+
+#sale-text {
+    page-break-before: always;
+}
+
+#price {
+    page-break-before: always;
+}
+
+#game1 h2, #game2 h2, #game3 h2,
+#game4 h2, #game5 h2, #sale1 h2,
+#sale2 h2, #sale3 h2 {
+    font-weight: 400;
+}
+
+#content-game p {
+    margin-top: 5px;
 }
