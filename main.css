@@ -742,12 +742,12 @@ input[type="submit"] {
     nav a {
         color: black;
         border: 1px solid black;
-        background-color: rgba(255, 255, 255, 0.81);
+        background-color: rgba(255, 255, 255, 0.71);
         padding: 5px;
     }
     
     nav a:hover {
-        background-color: #890200;
+        background-color: white;
     }
     
     /* ---GRID-MENU--- */
