@@ -1,6 +1,8 @@
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
+    padding: 0px !important;
+    overflow-x: hidden; 
 }
 
 h1 {
@@ -55,6 +57,10 @@ header {
     position: absolute;
     width: 200px;
     top: 20px;
+}
+
+#link-logo {
+    height: 0px;
 }
 
 #menu_pic {
@@ -187,7 +193,7 @@ span {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     color: white;
     
 }
@@ -367,7 +373,7 @@ span {
     display: flex;
     justify-content: center;
     overflow: hidden;
-    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
 }
 
 #overlay-game1, #overlay-game2,
@@ -696,7 +702,7 @@ input[type="submit"] {
     
     .grid-container {
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 200px 80px 1150px 300px;;
+        grid-template-rows: 200px 80px 1150px 300px;
     }
     
     /* ---HEADER--- */
@@ -787,6 +793,13 @@ input[type="submit"] {
         margin: 0px 10px;
     }
     
+    #overlay-game1, #overlay-game2,
+    #overlay-game3, #overlay-game4,
+    #overlay-game5, #overlay-sale1,
+    #overlay-sale2, #overlay-sale3 {
+        display: none;
+    }
+    
     #game1 {
         grid-area: 1/1/2/2;
     }
@@ -850,19 +863,21 @@ input[type="submit"] {
     /* ---KONTAKTA OSS--- */
     
     #contact-content {
-        grid-area: 3/1/4/2;
-        margin: 0px 10px;
+        grid-area: 3/1/4/3;
     }
     
-    #contact-skelleftea, 
-    #contact-pitea {
-        flex-direction: column;
-        height: 600px;
-        width: 80%;
-    }
-    
-    iframe {
+    .mapouter {
         display: none;
+    }
+    
+    #pitea-text {
+        margin-right: 0;
+    }
+    
+    #contact-pitea,
+    #contact-skelleftea {
+        justify-content: center;
+        height: 200px;
     }
     
     /* ---BOKA--- */
