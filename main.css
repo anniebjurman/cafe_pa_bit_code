@@ -1,3 +1,4 @@
+
 body {
     margin: 0;
     font-family: 'Quicksand', sans-serif;
@@ -41,6 +42,13 @@ p {
 }
 
 /* ------------WEBB------------ */
+#nav-button {
+    display: none;
+}
+
+#mobile-nav {
+    display: none;
+}
 
 /* ---HEADER--- */
 
@@ -705,6 +713,37 @@ input[type="submit"] {
         grid-template-rows: 200px 80px 1150px 300px;
     }
     
+    /* ---MENU--- */
+    
+    #nav-button {
+        font-size: 40px;
+        display: flex;
+        justify-content: flex-end;
+        color: white;
+    }
+    
+    #mobile-nav {
+        position: absolute;
+        background-color: rgba(95, 1, 0, 0.86);
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        padding-top: 60px;
+    }
+    
+    #mobile-nav li {
+        margin-bottom: 30px;
+    }
+    
+    #mobile-nav a {
+        font-family: 'Bowlby One SC', cursive;
+        font-size: 30px;
+    }
+    
     /* ---HEADER--- */
     
     header {
@@ -726,10 +765,6 @@ input[type="submit"] {
     
     li {
         display: block;
-    }
-    
-     nav {
-        display: none;
     }
     
     /* ---GRID-MENU--- */
