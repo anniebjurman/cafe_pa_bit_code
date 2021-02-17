@@ -516,7 +516,7 @@ input[type="time"], input[type="date"], input[type="submit"] {
     grid-area: 3/1/4/3;
 }
 
-#summary {
+.summary {
     border: 1px solid black;
     border-radius: 20px;
     height: 100px;
