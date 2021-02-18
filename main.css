@@ -601,7 +601,7 @@ input[type="submit"] {
     grid-area: 4/1/5/2;
 }
 
-#footer {
+footer {
     background-color: #EBEBEB;
     grid-area: 4/2/5/5;
     padding-top: 20px;
@@ -888,6 +888,12 @@ input[type="submit"] {
         display: none;
     }
     
+    iframe {
+        border-style: hidden;
+        margin: 0px;
+        overflow: hidden;
+    }
+    
     #pitea-text {
         margin-right: 0;
     }
@@ -927,7 +933,7 @@ input[type="submit"] {
     
     /* ---FOOTER--- */
     
-    #before-footer, #footer, #after-footer {
+    #before-footer, footer, #after-footer {
         display: none;
     }
 }
