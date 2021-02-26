@@ -53,18 +53,18 @@
                         <tr>
                             <td>
                                 <label for="date">Datum:</label><br>
-                                <input type="date" id="date" name="date" required>
+                                <input type="date" id="date" name="date" required onchange="add_date()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                             <td>
                                 <label for="time-start">Starttid:</label><br>
-                                <input type="time" name="time-start" id="time-start" required>
+                                <input type="time" name="time-start" id="time-start" required onchange="add_start_time()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                         </tr>
                         <tr>
                             <td></td>
                             <td>
                                 <label for="time-end">Sluttid:</label><br>
-                                <input type="time" name="time-end" id="time-end" required>
+                                <input type="time" name="time-end" id="time-end" required onchange="add_end_time()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                         </tr>
                     </table>
@@ -75,24 +75,24 @@
                     <table class="booking">
                         <tr>
                             <td>
-                                <input type="text" placeholder="Personnummer" id="security-number" required>
+                                <input type="text" placeholder="Personnummer" id="security-number" required onchange="add_sec_num()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                             <td></td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" placeholder="Förnamn" id="first-name" required>
+                                <input type="text" placeholder="Förnamn" id="first-name" required onchange="add_first_name()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                             <td>
-                                <input type="text" placeholder="Efternamn" id="surname" required>
+                                <input type="text" placeholder="Efternamn" id="surname" required onchange="add_surname()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <input type="text" placeholder="Adress" id="adress" required>
+                                <input type="text" placeholder="Adress" id="adress" required onchange="add_adress()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                             <td>
-                                <input type="text" placeholder="Postnummer" id="post-number" required>
+                                <input type="text" placeholder="Postnummer" id="post-number" required onchange="add_post_num()" onfocus="show_on_feedback(this)" onblur="show_off_feedback(this)">
                             </td>
                         </tr>
                     
@@ -101,7 +101,10 @@
                 
                 <section id="info-summary">
                     <div class="separator">Sammanställning</div>
-                    <div class="summary">. . .</div>
+                    <div id="summary1">
+                        <p id="summary-date"><b>Datum & tid</b><br><br></p>
+                        <p id="summary-person"><b>Dina uppgifter</b><br><br></p>
+                    </div>
                 </section>
                 
                 <section id="info-payment">
@@ -113,7 +116,7 @@
                     <input type="radio" id="paypal" name="payment" value="PayPal">
                     <label for="paypal">PayPal</label>
                     
-                    <div class="summary">. . .</div>
+                    <div id="summary-payment">. . .</div>
                     
                     <input type="submit" value="Boka" id="submit-button">
                 </section>
@@ -166,6 +169,9 @@
         
         <div id="after-footer"></div>
     </div>
+    <script type="text/javascript" src="fade_in_text.js"></script>
+    <script type="text/javascript" src="generate_summary.js"></script>
+    <script type="text/javascript" src="show_input_feedback.js"></script>
 </body>
 
 </html>
